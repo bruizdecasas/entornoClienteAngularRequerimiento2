@@ -9,7 +9,7 @@ import { Usuario } from './models/Usuario';
 @NgModule({
   declarations: [	
     AppComponent,
-      FormularioComponent
+    FormularioComponent
     
    ],
   imports: [
