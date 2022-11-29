@@ -21,6 +21,8 @@ export class FormularioComponent implements OnInit {
   }
 
   ngOnInit() {
+
+    console.log(this.usuarios)
   }
 
 }
