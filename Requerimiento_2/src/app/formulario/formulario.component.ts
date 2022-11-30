@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../models/Usuario';
+import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-formulario',
@@ -10,6 +12,10 @@ export class FormularioComponent implements OnInit {
 
  
     public usuarios: Array<Usuario>;
+    user:String ="";
+    pass:String ="";
+
+   
 
     constructor() { 
        this.usuarios=[
@@ -23,6 +29,16 @@ export class FormularioComponent implements OnInit {
   ngOnInit() {
 
     console.log(this.usuarios)
+    
+    
   }
 
-}
+  public comprobarLogin () {
+    
+
+    }
+
+
+  }
+
+
