@@ -9,8 +9,9 @@
       <div class="login">
         <h1>Bienvenid@</h1>
           <form>
-            <input type="text" name="u" placeholder="Usuario" required="required" />
-              <input type="password" name="p" placeholder="Contraseña" required="required" />
+            <input type="text"  [(ngModel)]="user" name="u" placeholder="Usuario" required="required" />
+             <input type="password" [(ngModel)]="pass" name="p" placeholder="Contraseña" required="required" />
+             <span class="rojo" *ngIf="!comprobarLogin">El nombre de usuario o contraseña no son correctos</span>
               <button type="submit" class="btn btn-primary btn-block btn-large">Log In</button>
           </form>
       </div>
